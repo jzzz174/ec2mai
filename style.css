@@ -1,12 +1,22 @@
 #bootstrap-overrides{
     font-family: -apple-system, "Noto Sans", "Helvetica Neue", Helvetica, "Nimbus Sans L", Arial, "Liberation Sans", "PingFang SC", "Hiragino Sans GB", "Noto Sans CJK SC", "Source Han Sans SC", "Source Han Sans CN", "Microsoft YaHei", "Wenquanyi Micro Hei", "WenQuanYi Zen Hei", "ST Heiti", SimHei, "WenQuanYi Zen Hei Sharp", sans-serif;
     margin: 0;
+    background-color: #f8f8f8;
+}
+.body{
+    font-family: -apple-system, "Noto Sans", "Helvetica Neue", Helvetica, "Nimbus Sans L", Arial, "Liberation Sans", "PingFang SC", "Hiragino Sans GB", "Noto Sans CJK SC", "Source Han Sans SC", "Source Han Sans CN", "Microsoft YaHei", "Wenquanyi Micro Hei", "WenQuanYi Zen Hei", "ST Heiti", SimHei, "WenQuanYi Zen Hei Sharp", sans-serif;
+    margin: 0;
 
 }
+html, body {
+  height: 100%;
+}
+
 .site-top {
+   overflow:hidden;
     position: relative;
     z-index: 10;
-    color: #fff;
+    color: #f8f8f8;
 }
 .row{
     margin-right: auto;
@@ -16,6 +26,7 @@
 }
 .navbar{
   background-color: #415B76;
+  overflow: hidden;
 }
 .site-branding-logo {
     max-height: calc(6.25rem - 1.25rem);
@@ -35,10 +46,28 @@
 .site-container{
     margin-right: auto; 
     margin-left: auto; 
-    padding-left: 8px;
-    padding-right: 8px;
     max-width: 1200px;
-    padding-top: 150px
+    padding-top: 0px
+
+}
+#overides-col-sm{
+  padding-right: 0px;
+  padding-left: 0px;
+}
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+  .site-container{
+      margin-right: auto; 
+      margin-left: auto; 
+      padding-left: 8px;
+      padding-right: 8px;
+      max-width: 1200px;
+      padding-top: 0px
+  }
+  #overides-col-sm{
+    padding-right: 15px;
+    padding-left: 15px;
+  }
 }
 .container-overrides{
     max-width: 1200px;
@@ -113,6 +142,7 @@ dl,ol,ul {
 .site-wrapper{
   overflow:hidden;
   width: 100%;
+  min-height: 100%
 }
 
 
@@ -302,3 +332,45 @@ figure{
   overflow:hidden;
 }
 
+table, th, td {
+    border: 1px solid black;
+}
+
+a.button {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+
+    text-decoration: none;
+    color: initial;
+    padding: 5px 10px;
+}
+
+.delbutton{
+  background-color: #d3172a;
+  padding: 5px 10px;
+}
+
+.fielderror{
+  color: #cc0000;
+   margin-top:10px;
+}
+img {
+    image-orientation: from-image;
+}
+.breadcrumb     {
+    background-color:#f8f8f8;
+}
+
+.statustable{
+  /*border-collapse: collapse;*/
+    table-layout:fixed;
+    width: 100%;
+      
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.product-description{
+    white-space: pre-line;
+}
